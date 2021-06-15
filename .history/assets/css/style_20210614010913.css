@@ -1,0 +1,7 @@
+html, body {
+    scroll-behavior: smooth;
+}
+
+nav .nav-wrapper    position: important fixed;
+    z-index: 9999;
+}

@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+.navbar-fixed {
+    margin-top: 50px;
+    position: fixed;
+    z-index: 999;
+}
+
+a .sidenav-trigger {
+    margin-top: 140px;
+
+    z-index: 9999;
+}

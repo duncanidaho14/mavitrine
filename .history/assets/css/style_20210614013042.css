@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+.navbar-fixed {
+    position: fixed;
+    z-index: 9999;
+}
+
+.sidenav {
+    margin
+}

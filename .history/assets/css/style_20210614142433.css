@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "aladin-v8-latin-regular";
+    src:    url("/assets/static/aladin-v8-latin-regular.woff2") format("woff2"),
+            url("/assets/static/aladin-v8-latin-regular.woff") format("woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+.navbar-fixed {
+    margin-top: -80px;
+    position: fixed;
+    z-index: 999;
+}
+
+a .sidenav-trigger {
+    position: relative;
+    margin-top: 140px;
+    width: 40px;
+    height: 40px;
+    z-index: 9999;
+}
+
+header.container-fluid {
+    margin-top: 80px;
+    height: auto;
+}
+
+.up {
+    background-color: bisque;
+}
+
+.fadeup {
+    width: 200px;
+    height: 400px;
+}

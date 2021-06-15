@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="theme-color" content="#84db94">
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Elhadi BEDDAREM</title>
+</head>
+<body>
+<div class="inc">
+
+    <header class="container-fluid">
+        
+        <div class="row">
+            <nav class="navbar-fixed">
+                <div class="nav-wrapper">
+                    <a id="switch" onclick="toggleTheme()" class="waves-effect waves-light btn-large"><i class="material-icons">airplay</i></a>
+                    <a href="#!" class="brand-logo">EB<i class="material-icons">cloud</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#services" class="sc"><i class="material-icons">search</i></a></li>
+                        <li><a href="#competences"><i class="material-icons">view_module</i></a></li>
+                        <li><a href="#parcours"><i class="material-icons">refresh</i></a></li>
+                        <li><a href="#contact"><i class="material-icons">more_vert</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="#">Sass</a></li>
+                <li><a href="#">Components</a></li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">Mobile</a></li>
+            </ul>
+            <ul id="slide-out" class="sidenav">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="/assets/img/mysql.png" class="circle">
+                        </div>
+                        <a href="#user"><img class="circle" src="/assets/img/git.png"></a>
+                        <a href="#name"><span class="black-text name">Elhadi Beddarem</span></a>
+                        <a href="#email"><span class="black-text email">elhadibeddarem@gmail.com</span></a>
+                    </div>
+                </li>
+                <li><a href="https://codeintheshell.fr" target="_blank"><i class="material-icons">cloud</i>Autre site : codeintheshell.fr</a></li>
+                <li><a href="https://shtex.fr/">Autre site : shtex.fr</a></li>
+                <li><a href="http://shtexworld.fr/">Autre site : shtexworld.fr</a></li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li><a class="subheader">séparateur</a></li>
+                <li><a class="waves-effect" href="./assets/img/cvelhadi.pdf" download="cvelhadi"><i class="material-icons">cloud_download</i> CV Download</a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </header>
+
+    <section class="container">
+        <article class="row">
+            <h1 class="elhadi-title" data-aos="fade-right">Elhadi BEDDAREM</h1>
+            <h2 data-aos="fade-left">Concepteur d'Application Web</h2>
+            <div class="carousel" data-aos="zoom-in-left">
+                <a class="carousel-item" href="#two!"><img src="./assets/img/react.png"></a>
+                <a class="carousel-item" href="#one!"><img src="./assets/img/symfony.png"></a>
+                <a class="carousel-item" href="#three!"><img src="./assets/img/mysql.png"></a>
+                <a class="carousel-item" href="#four!"><img src="./assets/img/git.png"></a>
+                <a class="carousel-item" href="#five!"><img src="./assets/img/javascript.png"></a>
+            </div>
+            
+            <div class="parallax-container" data-aos="zoom-in-left">
+                <div class="parallax">
+                    <img src="./assets/img/ordinateur-de-bureau-pc.jpg" alt="ordinateur de bureau"/>
+                </div>
+            </div>
+        </article>
+        
+
+    </section>
+
+    <section class="container-fluid">
+        <div id="services" class="section scrollspy"></div>
+        <article class="row services">
+            <h3>Services</h3>
+            <div class="parallax-container" data-aos="zoom-in-right">
+                <div class="parallax">
+                    <img src="./assets/img/ordinateur-de-bureau-pc.jpg" alt="ordinateur de bureau"/>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section class="container-fluid section scrollspy" data-aos="fade-up" id="competences">
+        <article class="row competences">
+            <h3>Compétences</h3>
+            
+                <div class="col s6 ">
+                    <h5 class="title-five">Symfony</h5>
+                    <div class="progress bar">
+                        <div class="determinate symfony" data-done="80">80%</div>
+                    </div>              
+                    
+                    <h5 class="title-five">PHP</h5>
+                    <div class="progress bar">
+                        <div class="determinate php" data-done="75">75%</div>
+                    </div>
+                    <h5 class="title-five">MySQL</h5>
+                    <div class="progress bar">
+                        <div class="determinate mysql" data-done="75">75%</div>
+                    </div>
+                </div>
+                <div class="col s6">
+                    <h5 class="title-five">JavaScript</h5>
+                    <div class="progress bar">
+                        <div class="determinate javascript" data-done="75">75%</div>
+                    </div>
+                    <h5 class="title-five">React</h5>
+                    <div class="progress bar">
+                        <div class="determinate react" data-done="50">50%</div>
+                    </div>
+                    <h5 class="title-five">MongoDB</h5>
+                    <div class="progress bar">
+                        <div class="determinate mongodb" data-done="60">60%</div>
+                    </div>
+                </div>
+        </article>
+
+    </section>
+
+    <aside class="">
+        <article class="">
+            <h4>Portfolio</h4>
+            <p><i class="material-icons large">add</i></p>
+            <div id="search" class="section scrollspy"></div>
+        </article>
+        <button></button>
+    </aside>
+
+    
+
+
+<div data-aos="fade-up">Salut tout le monde</div>
+
+
+
+<div data-aos="fade-right">Fade à droite</div>
+
+
+<div class="fadeup" data-aos="fade-up"
+    data-aos-anchor-placement="top-center">
+        m2i
+</div>
+<section class="container">
+    <article class="row">
+        <h3>Contact</h3>
+        <form action="./contact.php" method="POST">
+            <input type="text" class="input-group-text" placeholder="nom">
+            <input type="email" class="input-group-text" placeholder="email">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder=""></textarea>
+            <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>Envoyer</a>        </form>
+
+    </article>
+</section>
+<section class="container">
+    <article class="row">
+        <h4 class="parcours-title">Parcours</h4>
+        <div class="parcours">
+            <p>
+                En 2016, je me suis formé au joie du code en m'orientant dans le domaine du web.
+                J'ai commencé à suivre des formations sur des plateformes gratuites telle que youtube, freecodecamp
+                mais aussi payantes telle que udemy. 
+            </p> 
+            <p> 
+                En 2017, j'ai travaillé chez FTL Express, une société de livraison de colis. 
+                Nous avions pour projet une application d'impression de timbres postaux.
+                Le but étant de facilité l'envoie de colis postaux vers la chine pour ces personnes  vivant en France.
+                
+                Coté front nous avons utilisé Vue JS et coté back Java. 
+                En temps que développeur front-end je suis responsable de la qualité de mon code<br>
+                - Migration Vue 2.* et Int8 de l'application<br>
+                - Implémentationde fonctionnalité d’importation de CSV et de PDF<br>
+                - Test Unitaire et fonctionnel.<br>
+                
+                <blockquote>Environnement technique: Vue JS, Node JS, Express,
+                Element io, Chai, Mocha, SCRUM.</blockquote>
+            </p>
+
+            <p>En 2018, j'ai travaillé pour la société Azzerisk Advantage basée à saint Mandé. AZZERISK Advantage est un cabinet indépendant et international proposant 
+            des solutions complètes en risk management. <br>
+                    -         Installation de Cassandra sous windows 10<br>
+                    -         Ajout de nouvelles règles de gestion<br>
+                    -         Stockage en base de données NoSQL (Cassandra)<br>
+                    -         Maintenance évolutive et corrective sur un logiciel de comparaison de stratégie de risk. <br>
+                    -         Mise en forme de l’application grâce au flexbox<br>
+                    <blockquote>technique : AngularJS, Oracle, Cassandra, REST, Elasticsearch</blockquote>
+            </p>
+
+            <p> En 2019, J'ai travaillé sur des projets personnels : <br>
+                <a href="https://shtex.fr" target="_blank">https://shtex.fr</a> est un site en React JS. C'est une SPA connecté à une API REST (the MovieDB). <br>
+                <a href="http://shtexworld.fr" target="_blank">https://shtexworld.fr</a> est un site en javascript. Le jeu Snake pour les amateurs ;)<br>
+                <a href="http://shtexworld.com"target="_blank" >https://shtexworld.com</a> est un site en React JS. il permet de voir la valeur de la monnaie par rapport au dollar.<br>
+                <blockquote>J'ai lu le livre "tête la première dans les design pattern" écrit par Eric Freeman.</blockquote>
+            </p>
+
+            <p>En 2020, Développeur fullstack d'une application de calcul du nutriscore avec une solution Symfony 4.3 (twig) :
+                <br>
+                <a href="https://www.coopin.io/coopincook" target="_blank" rel="noopener noreferrer">https://www.coopin.io/coopincook</a>
+                <br>
+                <a href="https://cook.readyplayerweb.com/" target="_blank" rel="noopener noreferrer">https://cook.readyplayerweb.com/</a>
+                <br>
+                Web Scrapping en php de recette de cuisine. Site cuisine AZ, Marmitton, journal des femmes. <br>
+                Implémentation de différentes fonctionnalité comme facebook login, facebook share, google sign-in...
+                dans le projet symfony.<br>
+                Inscription à l'app, connexion à l'app. envoie de mail avec swiftmailer... <br>
+                Importation de CSV dans la base de données grâce à une connexion ssh et scp. <br>
+                Installation du bundle webpack encore...<br>
+                Ecriture de doc technique...<br>
+                Site Wordpress avec Elementor.io 
+            </p>
+            <p>
+                cours udemy : 
+                cours d'algo avec matthieu Gaston
+                    - algo de tri
+                    - 
+                Octobre 2020<br>
+                cours js<br>
+                requete HTTP <br>                               
+                function asynchrone<br>
+                cours web component HTML5 
+            </p>
+        </div>
+        
+    </article>
+</section>
+    <footer>
+       
+        <div id="footer">
+
+            <p>je fais des macro sur wow
+                <br>
+                configuration addon weakaura
+                <br>
+                Hype Unreal Engine 5
+            </p>
+        </div>
+    </footer>
+    
+</div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "aladin-v8-latin-regular";
+    src:    url("/assets/static/aladin-v8-latin-regular.woff2") format("woff2"),
+            url("/assets/static/aladin-v8-latin-regular.woff") format("woff");
+}
+
+.theme-light {
+   --color-primary: #0060df;
+   --color-secondary: #fbfbfe;
+   --color-accent: #fd6f53;
+   --font-color: #000000;
+}.theme-dark {
+   --color-primary: #17ed90;
+   --color-secondary: #2e6770;
+   --color-accent: #12cdea;
+   --font-color: #ffffff;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+.navbar-fixed {
+    margin-top: -80px;
+    position: fixed;
+    z-index: 999;
+}
+
+a .sidenav-trigger {
+    position: relative;
+    margin-top: 140px;
+    width: 40px;
+    height: 40px;
+    z-index: 9999;
+}
+
+header.container-fluid {
+    margin-top: 80px;
+    height: auto;
+}
+
+.up {
+    background-color: bisque;
+}
+
+.fadeup {
+    width: 200px;
+    height: 400px;
+}
+
+.inc {
+
+    background: var(--color-secondary);
+    
+}
+
+.inc h1 {
+    color: var(--font-color);
+}
+
+.inc button {
+    width: 10px;
+    height: 20px;
+    color: var(--font-color);
+    background: var(--color-primary);
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+}
+
+#switch {
+    background-color: rgba(red, green, blue, alpha);
+}
