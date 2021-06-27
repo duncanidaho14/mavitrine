@@ -15,24 +15,22 @@
 </head>
 <body>
 <div class="inc">
-
     <header class="container-fluid">
-        
         <div class="row">
             <nav class="navbar-fixed">
                 <div class="nav-wrapper">
                     <a id="switch" onclick="toggleTheme()" class="waves-effect waves-light btn-large"><i class="material-icons">airplay</i></a>
                     <a href="#!" class="brand-logo">EB<i class="material-icons">cloud</i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="#services" class="sc"><i class="material-icons">search</i></a></li>
-                        <li><a href="#competences"><i class="material-icons">view_module</i></a></li>
-                        <li><a href="#parcours"><i class="material-icons">refresh</i></a></li>
-                        <li><a href="#contact"><i class="material-icons">more_vert</i></a></li>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#services" class="sc"><i class="material-icons">live_tv</i></a></li>
+                        <li><a href="#competences"><i class="material-icons">crop_free</i></a></li>
+                        <li><a href="#parcours"><i class="material-icons">crop_portrait</i></a></li>
+                        <li><a href="#contact"><i class="material-icons">contact_mail</i></a></li>
                     </ul>
                 </div>
             </nav>
             <ul class="sidenav" id="mobile-demo">
-                <li><a href="#">Sass</a></li>
+                <li><a href="#services">Sass</a></li>
                 <li><a href="#">Components</a></li>
                 <li><a href="#">Javascript</a></li>
                 <li><a href="#">Mobile</a></li>
@@ -66,11 +64,11 @@
             <h1 class="elhadi-title" data-aos="fade-right">Elhadi BEDDAREM</h1>
             <h2 data-aos="fade-left">Concepteur d'Application Web</h2>
             <div class="carousel" data-aos="zoom-in-left">
-                <a class="carousel-item" href="#two!"><img src="./assets/img/react.png"></a>
                 <a class="carousel-item" href="#one!"><img src="./assets/img/symfony.png"></a>
-                <a class="carousel-item" href="#three!"><img src="./assets/img/mysql.png"></a>
-                <a class="carousel-item" href="#four!"><img src="./assets/img/git.png"></a>
-                <a class="carousel-item" href="#five!"><img src="./assets/img/javascript.png"></a>
+                <a class="carousel-item" href="#two!"><img src="./assets/img/mysql.png"></a>
+                <a class="carousel-item" href="#three!"><img src="./assets/img/git.png"></a>
+                <a class="carousel-item" href="#four!"><img src="./assets/img/javascript.png"></a>
+                <a class="carousel-item" href="#five!"><img src="./assets/img/react.png"></a>
             </div>
             
             <div class="parallax-container" data-aos="zoom-in-left">
@@ -92,44 +90,57 @@
                     <img src="./assets/img/ordinateur-de-bureau-pc.jpg" alt="ordinateur de bureau"/>
                 </div>
             </div>
+            <div>
+                <p>
+                    Gestion de Projet. <i class="material-icons">lightbulb_outline</i><br>
+                    Site vitrine, évènementiel, e-commerce.<br> 
+
+                    Intégration Web <i class="material-icons">add_a_photo</i><br>
+                    Des intégrations HTML5 / CSS, respectueusent des standards du web<br>
+
+                    Responsive Design <i class="material-icons">loop</i><br>
+                    Compatible tous supports, tablette et application mobile<br>
+                </p>            
+            </div>
         </article>
     </section>
+    <div id="competences">
 
-    <section class="container-fluid section scrollspy" data-aos="fade-up" id="competences">
+    </div>
+    <section class="container-fluid section scrollspy" data-aos="fade-up" >
         <article class="row competences">
             <h3>Compétences</h3>
             
-                <div class="col s6 ">
+                <div class="col s6" data-aos="fade-left">
                     <h5 class="title-five">Symfony</h5>
                     <div class="progress bar">
-                        <div class="determinate symfony" data-done="80">80%</div>
+                        <div class="determinate symfony" data-done="80"><span class="percent">80%</span></div>
                     </div>              
                     
                     <h5 class="title-five">PHP</h5>
                     <div class="progress bar">
-                        <div class="determinate php" data-done="75">75%</div>
+                        <div class="determinate php" data-done="75"><span class="percent">75%</span></div>
                     </div>
                     <h5 class="title-five">MySQL</h5>
                     <div class="progress bar">
-                        <div class="determinate mysql" data-done="75">75%</div>
+                        <div class="determinate mysql" data-done="75"><span class="percent">75%</span></div>
                     </div>
                 </div>
-                <div class="col s6">
+                <div class="col s6" data-aos="fade-right">
                     <h5 class="title-five">JavaScript</h5>
                     <div class="progress bar">
-                        <div class="determinate javascript" data-done="75">75%</div>
+                        <div class="determinate javascript" data-done="75"><span class="percent">75%</span></div>
                     </div>
                     <h5 class="title-five">React</h5>
                     <div class="progress bar">
-                        <div class="determinate react" data-done="50">50%</div>
+                        <div class="determinate react" data-done="50"><span class="percent">50%</span></div>
                     </div>
                     <h5 class="title-five">MongoDB</h5>
                     <div class="progress bar">
-                        <div class="determinate mongodb" data-done="60">60%</div>
+                        <div class="determinate mongodb" data-done="60"><span class="percent">60%</span></div>
                     </div>
                 </div>
         </article>
-
     </section>
 
     <aside class="">
@@ -155,93 +166,121 @@
     data-aos-anchor-placement="top-center">
         m2i
 </div>
-<section class="container">
-    <article class="row">
-        <h3>Contact</h3>
-        <form action="./contact.php" method="POST">
-            <input type="text" class="input-group-text" placeholder="nom">
-            <input type="email" class="input-group-text" placeholder="email">
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message ..."></textarea>
-            <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>Envoyer</a>        
-        </form>
-    </article>
-</section>
+
 <section class="container">
     <article class="row">
         <h4 class="parcours-title">Parcours</h4>
         <div class="parcours">
-            <p>
-                En 2016, je me suis formé au joie du code en m'orientant dans le domaine du web.
+            <div data-aos="zoom-in-left" class="parcours-text">
+                <p>En 2016, je me suis formé au joie du code en m'orientant dans le domaine du web.
                 J'ai commencé à suivre des formations sur des plateformes gratuites telle que youtube, freecodecamp
-                mais aussi payantes telle que udemy. 
-            </p> 
-            <p> 
-                En 2017, j'ai travaillé chez FTL Express, une société de livraison de colis. 
+                mais aussi payantes telle que udemy.<br>
+                cours udemy : 
+                cours d'algo avec matthieu Gaston
+                </p>
+                <ol class="parcours-div">
+                    <li class="parcours-info">algo de tri</li>
+                    <li class="parcours-info">cours js</li>
+                    <li class="parcours-info">requete HTTP</li>
+                    <li class="parcours-info">function asynchrone</li>
+                    <li class="parcours-info">cours web component HTML5</li>
+                </ol>
+                <blockquote>Environnement technique : Windows, Linux</blockquote>
+            </div> 
+            <div data-aos="zoom-in-right" class="parcours-text">  
+                <p> 2017, j'ai travaillé chez FTL Express, une société de livraison de colis. 
                 Nous avions pour projet une application d'impression de timbres postaux.
                 Le but étant de facilité l'envoie de colis postaux vers la chine pour les personnes vivant en France.
                 
                 Coté front nous avons utilisé Vue JS et coté back Java.
+                </p>
                 <br>
-                - Migration Vue 2.* et Int8 de l'application<br>
-                - Implémentationde fonctionnalité d’importation de CSV et de PDF<br>
-                - Test Unitaire et fonctionnel.<br>
+                <ol class="parcours-div">
+                    <li>Migration Vue 2.* et Int8 de l'application</li>
+                    <li>Implémentationde fonctionnalité d’importation de CSV et de PDF</li>
+                    <li>Test Unitaire et fonctionnel</li>
+                </ol>
                 
                 <blockquote>Environnement technique: Vue JS, Node JS, Express,
                 Element io, Chai, Mocha, SCRUM.</blockquote>
-            </p>
+            </div>
 
-            <p>
-                En 2018, j'ai travaillé pour la société Azzerisk Advantage basée à saint Mandé. AZZERISK Advantage est un cabinet indépendant et 
-                international proposant des solutions complètes en risk management. <br>
-                <ul  >
+            <div data-aos="zoom-in-left" class="parcours-text">
+                <p>En 2018, j'ai travaillé pour la société Azzerisk Advantage basée à saint Mandé. AZZERISK Advantage est un cabinet indépendant et 
+                international proposant des solutions complètes en risk management.</p> <br>
+                <ol class="parcours-div">
                     <li class="parcours-info">Installation de Cassandra sous windows 10</li>
                     <li class="parcours-info">Ajout de nouvelles règles de gestion</li>
                     <li class="parcours-info">Stockage en base de données NoSQL (Cassandra)</li>
                     <li class="parcours-info">Maintenance évolutive et corrective sur un logiciel de comparaison de stratégie de risk.</li>
                     <li class="parcours-info">Mise en forme de l’application grâce au flexbox</li>
-                </ul>
+                </ol>
                 <blockquote>technique : AngularJS, Oracle, Cassandra, REST, Elasticsearch</blockquote>
-            </p>
+            </div>
 
-            <p> En 2019, J'ai travaillé sur des projets personnels : <br>
+            <p data-aos="zoom-in-right"> En 2019, J'ai travaillé sur des projets personnels : <br>
                 <a href="https://shtex.fr" target="_blank">https://shtex.fr</a> est un site en React JS. C'est une SPA connecté à une API REST (the MovieDB). <br>
                 <a href="http://shtexworld.fr" target="_blank">https://shtexworld.fr</a> est un site en javascript. Le jeu Snake pour les amateurs ;)<br>
                 <a href="http://shtexworld.com"target="_blank" >https://shtexworld.com</a> est un site en React JS. il permet de voir la valeur de la monnaie par rapport au dollar.<br>
                 <blockquote>J'ai lu le livre "tête la première dans les design pattern" écrit par Eric Freeman.</blockquote>
             </p>
 
-            <p>En 2020, Développeur fullstack d'une application de calcul du nutriscore avec une solution Symfony 4.3 (twig) :
+            <p data-aos="zoom-in-left">En 2020, Développeur fullstack d'une application de calcul du nutriscore avec une solution Symfony 4.3 (twig) :
                 <br>
                 <a href="https://www.coopin.io/coopincook" target="_blank" rel="noopener noreferrer">https://www.coopin.io/coopincook</a>
                 <br>
                 <a href="https://cook.readyplayerweb.com/" target="_blank" rel="noopener noreferrer">https://cook.readyplayerweb.com/</a>
                 <br>
-                Web Scrapping en php de recette de cuisine. Site cuisine AZ, Marmitton, journal des femmes. <br>
-                Implémentation de différentes fonctionnalité comme facebook login, facebook share, google sign-in...
-                dans le projet symfony.<br>
-                Inscription à l'app, connexion à l'app. envoie de mail avec swiftmailer... <br>
-                Importation de CSV dans la base de données grâce à une connexion ssh et scp. <br>
-                Installation du bundle webpack encore...<br>
-                Ecriture de doc technique...<br>
-                Site Wordpress avec Elementor.io 
             </p>
-            <p>
-                cours udemy : 
-                cours d'algo avec matthieu Gaston
-                    - algo de tri
-                    - 
-                Octobre 2020<br>
-                cours js<br>
-                requete HTTP <br>                               
-                function asynchrone<br>
-                cours web component HTML5 
+                <ol class="parcours-div">
+                    <li>Web Scrapping en php de recette de cuisine. Site cuisine AZ, Marmitton, journal des femmes.</li>
+                    <li>Implémentation de différentes fonctionnalité comme facebook login, facebook share, google sign-in...
+                        dans le projet symfony.
+                    </li>
+                    <li>Inscription à l'app, connexion à l'app. envoie de mail avec swiftmailer...</li>
+                    <li>Importation de CSV dans la base de données grâce à une connexion ssh et scp.</li>
+                    <li>Installation du bundle webpack encore...</li>
+                    <li>Ecriture de doc technique...</li>
+                    <li>Site Wordpress avec Elementor.io</li>
+                </ol>
+                
+                
+            
+            <blockquote>Environnement technique: Linux, Symfony 4, Twig, jQuery, CSS3</blockquote>
+
+            <p data-aos="zoom-in-right">En 2021, Développeur fullstack d'une application de vote d'éléction du CSE :
+                <br>
+                
             </p>
+                <ol class="parcours-div">
+                   <li>Création et modification de plugin Wordpress</li>
+                   <li></li>
+                </ol>
+                
+                
+            
+            <blockquote>Environnement technique: Linux, Symfony 5, Twig, ES6, SCSS</blockquote>
         </div>
         
     </article>
 </section>
-    <footer>
-       
+
+<section class="container" data-aos="fade-right">
+    <article class="row" >
+        <h3>Contact</h3>
+        <form action="./contact.php" method="POST">
+            <div class="div-input-text">
+                <input type="text" class="input-group-text input-name" placeholder="nom">
+                <input type="email" class="input-group-text input-email" placeholder="email">
+            </div>
+            <textarea name="message" id="message" cols="90" rows="80" placeholder="Votre message ..."></textarea>
+            <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>Envoyer</a>        
+        </form>
+    </article>
+</section>
+
+    <footer class="footer">
+
         <div id="footer">
 
             <p>je fais des macro sur wow

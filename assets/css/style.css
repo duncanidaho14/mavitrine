@@ -39,7 +39,7 @@ html, body {
     margin-top: -80px;
     position: fixed;
     z-index: 999;
-    background-color: #0060df;
+    background-color: var(--color-primary);
 }
 
 a .sidenav-trigger {
@@ -96,9 +96,16 @@ header.container-fluid {
     border-radius: 5px;
 }
 
-#switch {
+/* #switch {
     background-color: rgba(128, 0, 49, .2);
     top: -5px;
+} */
+
+.sidenav {
+    background-color: var(--font-color);
+    width: 50px;
+    height: 50px;
+    z-index: 9999;
 }
 
 .elhadi-title {
@@ -114,7 +121,9 @@ header.container-fluid {
 div.progress.bar {
     height: 50px;
     border-radius: 5px 5px 5px 5px;
-    box-shadow: 0px 0px 15px 15px;
+    box-shadow: 5px 0px 5px 5px;
+    background-color: white;
+
 }
 div.determinate.symfony {
     background-color: #000000;
@@ -128,32 +137,79 @@ div.determinate.symfony {
 }
 
 .progress>.determinate.react {
+    width: 0%;
     background-color: aqua;
 }
 
 .progress>.determinate.mysql {
+    width: 0%;
     background-color: rgb(9, 169, 243);;
 
 }
 
 .progress>.determinate.php {
     background-color: blue;
+    width: 0%;
 }
 
 .progress>.determinate.javascript {
     background-color: yellow;
+    width: 0%;
 }
 
 .progress>.determinate.mongodb {
     background-color: green;
+    width: 0%;
 }
 
+
+
+/**
+    Parcours css
+**/
 .parcours {
     font-size: 1.3em;
     color: var(--font-color);
+    
 }
 
-.parcours-info {
-    list-style-image: url("./../img/bootstrap.png");
-    list-style: decimal;
+.parcours-div {
+    list-style-type: circle;
+    margin-left: 50px;
+}
+
+li .parcours-info {
+    padding-right: 20px;
+}
+
+#competences {
+    height: 30px;
+}
+
+.parcours-text {
+    
+}
+
+.div-input-text {
+    display: flex;
+    
+}
+
+.input-group-text {
+    margin: 0 15px 10px 15px;
+}
+
+input.input-group-text:nth-child(1) {
+    margin-right: 15px;
+
+}
+
+input.input-group-text:nth-child(2) {
+    margin-left: 15px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 50px;
 }

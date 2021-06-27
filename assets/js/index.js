@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    $(".dropdown-trigger").dropdown();
     $('.sidenav').sidenav();
+    $(".button-collapse").sidenav();
     $('.carousel').carousel();
     $('.parallax').parallax();
     $('.scrollspy').scrollSpy();
@@ -20,7 +20,7 @@ const progressbar = document.querySelector(".progress.bar");
 
 window.addEventListener('scroll', () => {
     
-    if (window.scrollY > 650) {
+    if (window.scrollY > 1499) {
         competences.classList.add('up');
         setTimeout(() => {
             symfony.style.width = symfony.getAttribute('data-done') + '%';
@@ -35,9 +35,23 @@ window.addEventListener('scroll', () => {
             react.style.color = '#ff9f41';
             mongodb.style.width = mongodb.getAttribute('data-done') + '%';
             mongodb.style.color = 'white';
-        }, 3500);
+        }, 500);
     }else {
         competences.classList.remove('up');
+        setTimeout(() => {
+            symfony.style.width = '0px';
+            symfony.style.color = 'white';
+            php.style.width = '0px';
+            php.style.color = 'white';
+            mysql.style.width = '0px';
+            mysql.style.color = 'white';
+            javascript.style.width = '0px';
+            javascript.style.color = '#1304FB';
+            react.style.width = '0px';
+            react.style.color = '#ff9f41';
+            mongodb.style.width = '0px';
+            mongodb.style.color = 'white';
+        }, 500);
     }
 });
 
