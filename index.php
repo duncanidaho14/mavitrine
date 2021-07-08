@@ -30,10 +30,10 @@
                 </div>
             </nav>
             <ul class="sidenav" id="mobile-demo">
-                <li><a href="#services">Sass</a></li>
-                <li><a href="#">Components</a></li>
-                <li><a href="#">Javascript</a></li>
-                <li><a href="#">Mobile</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <ul id="slide-out" class="sidenav">
                 <li>
@@ -166,7 +166,9 @@
     data-aos-anchor-placement="top-center">
         m2i
 </div>
+<div id="parcours">
 
+    </div>
 <section class="container">
     <article class="row">
         <h4 class="parcours-title">Parcours</h4>
@@ -253,8 +255,8 @@
                 
             </p>
                 <ol class="parcours-div">
-                   <li>Création et modification de plugin Wordpress</li>
-                   <li></li>
+                    <li>Création et modification de plugin Wordpress</li>
+                    <li>Modification du plugin Woocommerce</li>
                 </ol>
                 
                 
@@ -264,7 +266,7 @@
         
     </article>
 </section>
-
+<div id="contact"></div>
 <section class="container" data-aos="fade-right">
     <article class="row" >
         <h3>Contact</h3>
